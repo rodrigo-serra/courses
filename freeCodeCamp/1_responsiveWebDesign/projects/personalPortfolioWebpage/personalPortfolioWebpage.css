@@ -1,0 +1,115 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0, 4%, 16%);
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: #c62828;
+  position: fixed;
+  margin: -15px 0px 0px -8px;
+}
+
+.flex-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.flex-bar a {
+  margin: 18px 60px auto 0px;
+  font-size: 20px;
+  color: #fafafa;
+  text-decoration: none;
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+#welcome-section h1 {
+  font-size: 12vh;
+  color: #fafafa;
+}
+
+#welcome-section h2 {
+  font-size: 8vh;
+  color: #c62828;
+}
+
+#projects {
+  background-color: #45567d;
+  margin: 0;
+  height: 500px;
+}
+
+#projects h1 {
+  text-align: center;
+  text-decoration: underline;
+  color: white;
+  margin: 0px 0 50px 0;
+  padding: 40px;
+  font-size: 8vh;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 20vh;
+  background-color: #45567d;
+  column-gap: 10px;
+  margin: 0px 15px 0px 15px;
+}
+
+.project-tile {
+  background-color: hsl(0, 4%, 16%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-tile a {
+  text-decoration: none;
+  color: white;
+  font-size: 5vh;
+}
+
+#profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+#profile h1 {
+  font-size: 18vh;
+  color: #fafafa;
+}
+
+#profile p {
+  font-size: 7vh;
+  color: #fafafa;
+  margin: -15px 0 100px 0;
+}
+
+#profile a {
+  text-decoration: none;
+  color: white;
+  font-size: 8vh;
+}
+
+@media only screen and (max-width: 600px) {
+  #profile h1 {
+    font-size: 15px;
+    color: #ffa000;
+  }
+}

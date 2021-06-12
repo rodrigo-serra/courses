@@ -1,0 +1,1 @@
+console.log("Responsive Web Design Project - Techincal Documentation Page");

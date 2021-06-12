@@ -1,0 +1,56 @@
+body {
+  background-color: #90caf9;
+}
+
+/*Container which fills the entire page*/
+.container {
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Container for the svg*/
+.box {
+  height: 600px;
+  width: 900px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+
+  background-color: white;
+
+  box-shadow: 0px -3px 8px 1px rgba(0, 0, 0, 0.69);
+}
+
+/*Title Font*/
+.title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 48px;
+}
+
+/*Id for the Tooltip*/
+#tooltip {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+
+  background-color: #e0e0e0;
+
+  width: 180px;
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  border: solid;
+  border-width: 2px;
+  border-radius: 5px;
+
+  /*padding: 5px;*/
+}

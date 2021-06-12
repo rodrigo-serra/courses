@@ -1,0 +1,207 @@
+body {
+  background-color: #ffe0b2;
+}
+
+.container {
+  height: 100vh;
+  /*background-color: pink;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+$gridwidth: 352px;
+$gridheight: 400px;
+
+$singlerow: 68px;
+$singlecolumn: 88px;
+
+$doublerow: 136px;
+$doublecolumn: 176px;
+
+/* 352px - 88px */
+$flexlinewidth: 264px;
+
+/* 400px - 60px */
+$flexcolumnheight: 340px;
+
+$screenheight: 60px;
+
+$digit-backcolor: #ffb74d;
+$ac-backcolor: #ef5350;
+$op-backcolor: #ffcc80;
+$equal-backcolor: #ffe082;
+$screen-backcolor: black;
+
+.box {
+  border: 5px solid #bf360c;
+  display: grid;
+  grid-template-columns: repeat(4, $singlecolumn);
+  grid-template-rows: $screenheight repeat(5, $singlerow);
+}
+
+@mixin gridposition($cs, $ce, $rs, $re) {
+  grid-column-start: $cs;
+  grid-column-end: $ce;
+  grid-row-start: $rs;
+  grid-row-end: $re;
+}
+
+@mixin buttonsborders {
+  //border: 1px solid black;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #bf360c;
+}
+
+@mixin buttonstext {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+@mixin screentext {
+  font-family: "Economica", sans-serif;
+}
+
+@mixin buttonshover {
+  opacity: 0.75;
+  transform: scale(1.0005);
+}
+
+.flexscreen {
+  @include gridposition(1, 5, 1, 2);
+  display: flex;
+  flex-wrap: wrap;
+  width: $gridwidth;
+  height: $screenheight;
+}
+
+.flexline {
+  display: flex;
+  flex-wrap: wrap;
+  width: $flexlinewidth;
+  height: $singlerow;
+}
+
+.flexcolumn {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: $singlecolumn;
+  height: $flexcolumnheight;
+  /*background-color: green;*/
+}
+
+a {
+  @include gridposition(1, 4, 2, 3);
+}
+
+.b {
+  @include gridposition(4, 5, 2, 7);
+}
+
+.c {
+  @include gridposition(1, 4, 3, 4);
+}
+
+.d {
+  @include gridposition(1, 4, 4, 5);
+}
+
+.e {
+  @include gridposition(1, 4, 5, 6);
+}
+
+.f {
+  @include gridposition(1, 4, 6, 7);
+}
+
+.screen {
+  width: $gridwidth;
+  height: $screenheight;
+  background-color: $screen-backcolor;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.computation {
+  @include screentext;
+  font-size: 20px;
+  color: #f57c00;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.result {
+  @include screentext;
+  font-size: 28px;
+  color: white;
+  margin-right: 5px;
+  margin-bottom: 3px;
+}
+
+.ac {
+  width: $doublecolumn;
+  height: $singlerow;
+  background-color: $ac-backcolor;
+  @include buttonsborders;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include buttonstext;
+}
+
+.thezero {
+  width: $doublecolumn;
+  height: $singlerow;
+  background-color: $digit-backcolor;
+  @include buttonsborders;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include buttonstext;
+}
+
+.operators {
+  width: $singlecolumn;
+  height: $singlerow;
+  background-color: $op-backcolor;
+  @include buttonsborders;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include buttonstext;
+}
+
+.digit {
+  width: $singlecolumn;
+  height: $singlerow;
+  background-color: $digit-backcolor;
+  @include buttonsborders;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include buttonstext;
+}
+
+.equalsign {
+  width: $singlecolumn;
+  height: $doublerow;
+  background-color: $equal-backcolor;
+  @include buttonsborders;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include buttonstext;
+}
+
+.ac:hover,
+.thezero:hover,
+.operators:hover,
+.digit:hover,
+.equalsign:hover {
+  @include buttonshover;
+}

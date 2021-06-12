@@ -1,0 +1,38 @@
+body {
+  background-color: #81c784;
+}
+
+label {
+  font-family: "Russo One", sans-serif;
+}
+
+.row1 {
+  background-color: #388e3c;
+  border: 2px solid black;
+  height: 25px;
+}
+
+.row2 {
+  background-color: white;
+  height: 350px;
+}
+
+.formclass1 {
+  margin-top: 15%;
+  margin-left: 15%;
+  margin-right: 15%;
+  box-shadow: 0px 0px 50px grey;
+}
+
+.formclass2 {
+  margin-top: 15%;
+  margin-left: 5%;
+  margin-right: 5%;
+  box-shadow: 0px 0px 15px grey;
+}
+
+#preview {
+  overflow: auto;
+  height: 348px;
+  width: 100%;
+}

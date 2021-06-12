@@ -1,0 +1,65 @@
+body {
+  background-color: #424242;
+}
+
+.col-test1 {
+  /*background-color: green;*/
+  padding: 10px;
+}
+
+.container {
+  padding: 50px;
+}
+
+.box {
+  /*background-color: pink;*/
+  background-color: #bdbdbd;
+  height: auto;
+  width: 700px;
+  margin: auto;
+  margin-top: 30vh;
+}
+
+.button-box {
+  height: 100px;
+  width: auto;
+  /*background-color: pink;*/
+  margin: auto;
+}
+
+.btn-play {
+  height: 70px;
+  width: 70px;
+}
+
+.monitor {
+  height: 100px;
+  /*background-color: pink;*/
+}
+
+.textbox {
+  width: 200px;
+  height: 70px;
+  background-color: #212121;
+  font-family: "Nova Flat", cursive;
+  font-size: 26px;
+  color: #b71c1c;
+}
+
+.button-letter {
+  font-family: "Nova Flat", cursive;
+  font-size: 26px;
+}
+
+.border-3 {
+  border-width: 13px !important;
+}
+
+.border-1 {
+  border-width: 5px !important;
+}
+
+.logo {
+  font-family: "Nova Flat", cursive;
+  font-size: 32px;
+}
